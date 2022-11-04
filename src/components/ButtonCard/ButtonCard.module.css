@@ -1,0 +1,15 @@
+.botaoLer {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.375rem;
+  background-color: #21241F;
+  color: var(--branco);
+  border: 0.5px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botaoLer:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}

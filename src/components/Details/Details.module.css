@@ -1,0 +1,134 @@
+.detailPrimary {
+  margin-top: -40px;
+  padding: 3rem 7.5rem 3rem;
+  background-color: #C68E47;
+  color: var(--branco);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'imagem texto';
+  gap: 7%;
+}
+
+.detailSecondary {
+  padding: 3rem 7.5rem 3rem;
+  background-color: #1C2719;
+  color: var(--branco);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.titulo {
+  font-family: var(--fonte-secundaria);
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tituloSecondary {
+  font-family: var(--fonte-secundaria);
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.paragrafo {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
+.paragrafoSecondary {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
+.imagem {
+  grid-area: imagem;
+}
+
+.apresentacao {
+  grid-area: texto;
+}
+
+.imagens, .imagensSecondary {
+  position: relative;
+  height: 406px;
+}
+
+.imagens > .minhaFoto, .imagensSecondary > .minhaFoto {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40vw;
+  border-radius: 20px;
+}
+
+@media (max-width: 1100px) {
+  .detailPrimary, .detailSecondary {
+      padding: 3.5rem 1.5rem;
+  }
+
+  .titulo, .tituloSecondary {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+  }
+
+  .paragrafo, .paragrafoSecondary {
+      margin-bottom: 1.5rem;
+  }
+
+  .imagens, .imagensSecondary {
+      height: 338px;
+  }
+
+  .imagens > .minhaFoto, .imagensSecondary > .minhaFoto {
+      width: 25vw;
+  }
+
+  .imagens > .circuloColorido, .imagensSecondary > .circuloColorido {
+      right: 10vw;
+      width: 35vw;
+  }
+}
+
+@media (max-width: 744px) {
+  .detailPrimary, .detailSecondary {
+      padding: 2rem 1rem;
+      display: block;
+  }
+
+  .titulo, .tituloSecondary {
+      margin-bottom: 2rem;
+  }
+
+  .paragrafo, .paragrafoSecondary {
+      margin-bottom: 2rem;
+  }
+
+  .imagens, .imagensSecondary {
+      height: 307px;
+  }
+
+  .imagens > .minhaFoto, .imagens > .circuloColorido, .imagensSecondary > .minhaFoto, .imagensSecondary > .circuloColorido {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+  }
+
+  .imagens > .minhaFoto, .imagensSecondary > .minhaFoto {
+      width: 170px;
+      transform: translate(5rem, 0px);
+  }
+
+  .imagens > .circuloColorido, .imagensSecondary > .circuloColorido {
+      width: 240px;
+      transform: translate(-1.5rem, 0px);
+  }
+}
